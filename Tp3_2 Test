@@ -1,0 +1,37 @@
+package ar.edu.unq.po2.tp3_1Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import ar.edu.unq.po2.tp3_1.DesNumerosEj2;
+
+class DesNumeroTestCase {
+
+	private DesNumerosEj2 desNumero;
+	
+	@BeforeEach
+	public void setUp() throws Exception {
+		
+		desNumero = new DesNumerosEj2() ;
+	
+		desNumero.addNumber(313);
+		desNumero.addNumber(13);
+		desNumero.addNumber(6538);
+		desNumero.addNumber(675);
+		desNumero.addNumber(423);
+		desNumero.addNumber(32);
+		desNumero.addNumber(323);
+		desNumero.addNumber(3232);
+		desNumero.addNumber(3231);
+		desNumero.addNumber(8658);
+	}
+	@Test
+	public void testEvenNumbers() {
+		
+		int amount = desNumero.unidad();
+		
+		assertEquals(amount, 0);
+	}	
+}
