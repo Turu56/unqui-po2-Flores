@@ -1,0 +1,79 @@
+import java.util.List;
+import java.util.ArrayList;
+
+public class Agenda2 {
+	 
+	public List<String> nombres = new ArrayList<String>();
+	public Agenda a=new Agenda();
+	
+	public List<String> getNombres() {
+		return nombres;
+	}
+	public void setNombres(List<String> nombres) {
+		this.nombres = nombres;
+	}
+	
+	public void agregarNombre (String nombreAAgregar) {
+		this.getNombres().add(nombreAAgregar);
+		//this.getNombres me da la lista y con el add le añaqnado el string
+	}
+	public Boolean tieneAlMenosUnNombreCon(String inicio){
+		int i=0;
+		while(i<nombres.size()&!nombres.get(i).startsWith(inicio)) {
+		++i;
+		}
+	return nombres.get(i).startsWith(inicio);
+	}
+	//public void todosEmpiezanCon(string inicio) {
+		
+	//}
+	public List<String> filtrar (String inicio) {
+		List<String> nombresConInicialBuscada = new ArrayList<String> ();
+		for (String nombre : nombresConInicialBuscada) {
+			if(nombre.startsWith(inicio)) {
+				nombresConInicialBuscada.add(nombre);
+			}
+		}
+		return nombresConInicialBuscada;	
+	}
+	// : es un = para cada elemento del String
+	public void printAll (List<String> todosLosNombres) {
+		for (String nombre : todosLosNombres) {
+			System.out.println(nombre);
+			//for 
+			//nombre.get(a);
+			//System.out.println(nombres.get(a));
+			//(nombres.get(a));	
+		}	
+	}	
+}
+
+TEST
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.List;
+import java.util.ArrayList;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class Agenda2TestCase {
+
+	private Agenda2 ListaNombres = new Agenda2();
+
+	@BeforeEach
+	void setUp() {
+		ListaNombres.agregarNombre("Tomas");
+		ListaNombres.agregarNombre("Marta");
+		ListaNombres.agregarNombre("Lucas");
+		ListaNombres.agregarNombre("Juan");
+		ListaNombres.agregarNombre("Jose");  
+	}
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}
