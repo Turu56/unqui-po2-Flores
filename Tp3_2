@@ -45,3 +45,39 @@ public class DesNumerosEj2 {
 	 }*/
 }
 
+import java.util.ArrayList;
+import java.util.List;
+
+public class TP3_2 {
+	
+		List<Integer> lista = new ArrayList<Integer>();
+
+		public List<Integer> getLista() {
+			return lista;
+		}
+		public void setLista(List<Integer> lista) {
+			this.lista = lista;
+		}
+		/*public int esPar() {
+			if ( this.getCantNum() % 2 == 0) {
+			return this.getCantNum(); 
+		*/
+		public int desarme(){
+		int a=0;
+		lista.get(a);
+		
+		//for (lista.get(a); a<lista.size(); a++ ) {
+			while(lista.get(a)>0) {
+				 lista.get(a)%10 == 0;
+				 lista.get(a)=lista.get(a)/10;
+			}
+		//d=n%10		
+		//n=n/10	
+		return 0;	
+		}
+}
+		  		/*while (lista.get(a)>100){
+		  		lista.get(a)-=100;
+		 		d++
+		  		
+		 }*/
