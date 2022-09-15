@@ -1,0 +1,47 @@
+package ar.edu.unq.po2.tp3_1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class DesNumerosEj2 extends CounterEj1  {
+
+	List<Integer> lista = new ArrayList<Integer>();
+	DesNumerosEj2 cantNum = new DesNumerosEj2();
+	public DesNumerosEj2 getCantNum() {
+		return cantNum;
+	}
+	public void setCantNum(DesNumerosEj2 cantNum) {
+		this.cantNum = cantNum;
+	}
+
+	/*public int esPar() {
+		
+		
+		if ( this.getCantNum() % 2 == 0) {
+		
+		return this.getCantNum(); 
+	
+	*/
+	public int  unidad(){
+	int a,b,c,d;
+	a=0;
+	c=0;
+	d=0;
+	for (lista.get(a); a<lista.size(); a++ ) {
+		while (lista.get(a)>1000){
+			 lista.get(a);
+			 c++;
+		}
+		if(c % 2 == 0){
+	   			//d++;
+		}
+	}
+		return 0;
+	}
+	  		/*while (lista.get(a)>100){
+	  		lista.get(a)-=100;
+	 		d++
+	  		
+	 }*/
+}
+
