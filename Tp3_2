@@ -3,7 +3,7 @@ package ar.edu.unq.po2.tp3_1;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DesNumerosEj2 extends CounterEj1  {
+public class DesNumerosEj2 {
 
 	List<Integer> lista = new ArrayList<Integer>();
 	DesNumerosEj2 cantNum = new DesNumerosEj2();
